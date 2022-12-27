@@ -1,0 +1,11 @@
+fizbuzz
+	1. Changed inappropriate name for method
+	2. Unnecessary primitive variable string removed
+	3. Replaced String with query
+	4. replaced dead code
+	
+plainTextToHTMLConverter
+	1. Hardcoding smell eliminated
+	2. Uninformative names of constants refactored
+	3. Unhandled exceptions handled
+	4. Unnecessary comments removed
