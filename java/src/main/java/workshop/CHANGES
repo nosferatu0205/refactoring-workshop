@@ -5,7 +5,12 @@ fizbuzz
 	4. replaced dead code
 	
 plainTextToHTMLConverter
-	1. Hardcoding smell eliminated
-	2. Uninformative names of constants refactored
-	3. Unhandled exceptions handled
-	4. Unnecessary comments removed
+	1. Hardcoding smell eliminated, file path was hardcoded but we can now use a path argument
+	2. Uninformative names of method refactored, toHTML method is renamed to convertToHTML. Inappropriate naming smell avoided.
+	3. Unhandled exceptions handled. IOException was not handled previously but now we print stack trace.
+	4. Unnecessary comments removed.
+	5. Long method smell removed, basicHTMLEncode method is broken down. 
+	6. Magic Numbers is handled. String literals have been extracted into constant variabls to improve code readability.
+	7. Unused variables removed. CharacterToConvert variable eliminated.
+	8. AddNewLine method is eliminated to avoid code duplication.
+	9. Inappropriate intimacy has been addressed by moving the read method to a separate method to improve separation of concerns and make the program more cohesive.
